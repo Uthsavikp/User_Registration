@@ -34,6 +34,15 @@ public class UserRegistration {
             if (!flag) System.out.println("Re Enter Your Email Address: ");
         } while (!flag);
         System.out.println("Valid Email Address");
+
+        do {
+            String phoneNumber = "(\\+91)?[6-9][0-9]{9}";
+            System.out.println("Enter Your Phone Number: ");
+            String userInput = user.next();
+            flag = userInput.matches(phoneNumber);
+            if (!flag) System.out.println("Re Enter Your Phone Number: ");
+        } while (!flag);
+        System.out.println("Valid Phone Number");
     }
 
 }
