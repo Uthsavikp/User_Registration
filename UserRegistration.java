@@ -8,7 +8,7 @@ public class UserRegistration {
 
         boolean flag;
         Scanner user = new Scanner(System.in);
- /*      do {
+      do {
             String firstName = "[A-Z][a-zA-Z]{2,}";
             System.out.println("Enter Your First Name: ");
             String userInput = user.next();
@@ -43,7 +43,7 @@ public class UserRegistration {
             if (!flag) System.out.println("Re Enter Your Phone Number: ");
         } while (!flag);
         System.out.println("Valid Phone Number");
-*/
+
         do {
             String password = "(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}";
             System.out.println("Enter Your Password: ");
