@@ -28,7 +28,7 @@ public class UserRegistration {
 
         do {
             String email = "[a-zA-Z]{3}[0-9a-zA-Z\\.]*@[a-z]*\\.(co|in)";
-            System.out.println("Enter Your Email AddressValid_Email_Address: ");
+            System.out.println("Enter Your Email Address: ");
             String userInput = user.next();
             flag = userInput.matches(email);
             if (!flag) System.out.println("Re Enter Your Email Address: ");
