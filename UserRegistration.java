@@ -43,6 +43,15 @@ public class UserRegistration {
             if (!flag) System.out.println("Re Enter Your Phone Number: ");
         } while (!flag);
         System.out.println("Valid Phone Number");
+
+        do {
+            String password = "[a-zA-Z0-9]{8,}";
+            System.out.println("Enter Your Password: ");
+            String userInput = user.next();
+            flag = userInput.matches(password);
+            if (!flag) System.out.println("Re Enter Your Password: ");
+        } while (!flag);
+        System.out.println("Valid Password");
     }
 
 }
